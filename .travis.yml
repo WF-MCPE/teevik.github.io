@@ -5,6 +5,7 @@ node_js:
 branches:
   only:
     - src
+    - master
 
 before_install:
   - npm install -g gulp-cli
