@@ -19,6 +19,7 @@
 body{
     background-color: $color-body-light;   
     padding-top: $header-height;
+    overflow-x: hidden;
 }
 
 @import "partials/**/*";
