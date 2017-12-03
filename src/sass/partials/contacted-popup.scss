@@ -1,0 +1,7 @@
+.contacted-popup{
+    display: none;
+    text-align: center;
+    &:target{
+        display: block;
+    }
+}

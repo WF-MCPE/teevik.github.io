@@ -1,0 +1,42 @@
+$gutter:                30px;
+$header-height:         90px;
+$hero-min-height:       500px;
+$desktop-width:         700px;
+
+$content-width:         1100px;
+
+$font-nunito:           "Nunito", sans-serif;
+
+$h1-fontsize:           4.2rem;
+$h2-fontsize:           2.2rem;
+$h3-fontsize:           2.92rem;
+$h4-fontsize:           2.28rem;
+$h5-fontsize:           1.64rem;
+$h6-fontsize:           1rem;
+
+$font-size-mobile:       18px;
+$font-size-desktop:      20px;
+
+$color-body-light:      #ffffff;
+$color-body-dark:       #ebebeb;
+
+$color-primary:         #262626;
+
+$text-body:             $color-primary;
+
+$color-success:         #32b44b;
+$color-info:            #5bc0de;
+$color-warning:         #f0ad4e;
+$color-error:           #e74c3c;
+
+$color-gray-light:      #d4d4d4;
+$color-gray-dark:       #c2c0c0;
+$color-gray-darker:       darken($color-gray-dark, 10);
+
+$color-white:           #ffffff;
+
+$shadow-dark:             0px 4px 18px #aaa;
+$shadow-light:            0px 4px 18px #ccc;
+$color-border:          #c6c6c6;
+
+$easing-function: cubic-bezier(0.4, 0.0, 0.2, 1);

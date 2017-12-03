@@ -1,0 +1,27 @@
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    
+    padding: 0 $gutter/2;
+    height: $header-height;
+
+    z-index: 2;
+    
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+
+        max-width: $content-width;
+        margin: 0 auto;
+    }
+    &__logo{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    &__contact-button{
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,29 @@
+.float-input{
+    display: block;
+    position: relative;
+    &__input{
+        &::placeholder{
+            transition: opacity .2s $easing-function;
+        }
+        &:placeholder-shown:not(:focus){
+
+            &::placeholder{
+                opacity: 0;
+            }
+            & + *{
+                font-size: 1rem;
+                opacity: .5;
+                bottom: 0;
+            }
+        }
+    }
+    &__label{
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+        cursor: text;
+        font-size: .7rem;
+        opacity: 1;
+        transition: all .2s $easing-function;
+    }
+}

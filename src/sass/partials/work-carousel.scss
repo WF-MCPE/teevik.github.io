@@ -1,0 +1,48 @@
+.work-carousel{
+    padding-bottom: $gutter;
+    .flickity-prev-next-button{
+        display: none;
+    }
+    @include desktop{
+        .flickity-prev-next-button{
+            display: initial;
+        }
+    }
+    &__item{
+        width: 100%;
+        margin: 0 $gutter*2;
+        @include desktop{
+            width: 50%;
+        }
+
+        transition: filter .5s $easing-function;
+        pointer-events: none;
+        filter: grayscale(1);
+        &.is-selected{
+            filter: none;
+            pointer-events: auto;
+        }
+    }
+    &__image{
+        width: 100%;
+        box-shadow: $shadow-dark;
+        border-radius: 4px;
+    }  
+    &__description{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text{
+
+    }
+    &__name{
+        font-size: 1.6rem;
+    }
+    &__about{
+
+    }
+    &__link{
+        flex: 0 0 50px; 
+    }
+}

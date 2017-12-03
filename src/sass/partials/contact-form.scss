@@ -1,0 +1,36 @@
+.contact-form{
+    position: relative;
+    box-shadow: $shadow-light;
+    padding: $gutter;
+    border-radius: 2px;
+
+    @include desktop{
+        width: $content-width/2;
+        margin: 0 auto;
+    }
+    &__float-input{
+        margin-bottom: $gutter;
+    }
+    &__input{
+        border: none;
+        outline: none;
+
+        width: 100%;
+
+        border-bottom: 1px solid $color-border;
+    }
+    &__label{
+
+    }
+    &__submit{
+        position: absolute;
+        right: $gutter;
+        bottom: calc(0 - 25px);
+        img{
+            transform: translateX(-1px);            
+        }
+        input{
+            display: none;
+        }
+    }
+}

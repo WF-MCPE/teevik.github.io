@@ -1,0 +1,81 @@
+@function box-shadow ($level: 1) {
+    @if $level == 1 {
+        @return 0 3px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    } @else if $level == 2 {
+        @return 0 6px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    } @else if $level == 3 {
+        @return 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    } @else if $level == 4 {
+        @return 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    } @else if $level == 5 {
+        @return 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+}
+@function box-shadow-reverse($level: 1) {
+    @if $level == 1 {
+        @return 0 -3px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    } @else if $level == 2 {
+        @return 0 -6px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    } @else if $level == 3 {
+        @return 0 -10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    } @else if $level == 4 {
+        @return 0 -14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    } @else if $level == 5 {
+        @return 0 -19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+}
+@function box-shadow-image ($level: 1) {
+    @if $level == 1 {
+        @return drop-shadow(0 1px 3px rgba(0,0,0,0.12)) drop-shadow(0 1px 2px rgba(0,0,0,0.24));
+    } @else if $level == 2 {
+        @return drop-shadow(0 3px 6px rgba(0,0,0,0.16)) drop-shadow(0 3px 6px rgba(0,0,0,0.23));
+    } @else if $level == 3 {
+        @return drop-shadow(0 10px 20px rgba(0,0,0,0.19)) drop-shadow(0 6px 6px rgba(0,0,0,0.23));
+    } @else if $level == 4 {
+        @return drop-shadow(0 14px 28px rgba(0,0,0,0.25)) drop-shadow(0 10px 10px rgba(0,0,0,0.22));
+    } @else if $level == 5 {
+        @return drop-shadow(0 19px 38px rgba(0,0,0,0.30)) drop-shadow(0 15px 12px rgba(0,0,0,0.22));
+    }
+}
+
+@function get-contrast($color){
+    @if(lightness($color)>50){
+        @return #000000;
+    } @else{
+        @return #ffffff;
+    }
+}
+@mixin desktop {
+    @media (min-width: $desktop-width){
+        @content;
+    }
+}
+@mixin phone {
+    @media (max-width: $desktop-width){
+        @content;
+    }
+}
+@mixin content-width($width: $content-width){
+    max-width: $width;
+    margin-left: auto; margin-right: auto;
+}
+
+@function str-replace($string, $search, $replace: '') {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+@function svg-encode($string){
+	$result: str-replace($string, '<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
+	$result: str-replace($result, '%', '%25');
+	$result: str-replace($result, '"', '\'');
+	$result: str-replace($result, '<', '%3C');
+	$result: str-replace($result, '>', '%3E');
+
+	@return 'data:image/svg+xml,' + $result;
+}
