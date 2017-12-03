@@ -7,15 +7,10 @@ branches:
     - src
 
 before_install:
-  - npm rebuild node-sass
   - npm install -g gulp-cli
 
 script:
   - npm run build
-
-cache:
-  directories:
-    - node_modules
 
 notifications:
   email:
