@@ -20,31 +20,18 @@ document.on("DOMContentLoaded", (e) => {
     const $workCarousel = query(".work-carousel");
     const workCarousel = new Flickity($workCarousel, {
         wrapAround: true,
-        autoPlay: 6000,
         pauseAutoPlayOnHover: false,
         lazyLoad: 2
     })
     const sr = new ScrollReveal();
 
-    const commonOptions = {
+    const scrollRevealOptions = {
         scale: 1,
         duration: 1000,
         distance: "50px",
-        viewFactor: 0.3
-    }
-
-    sr.reveal(queryAll(".sr--top"), Object.assign(commonOptions, {
+        viewFactor: 0.3,
         origin: "top"
-    }));
-    sr.reveal(queryAll(".sr--bottom"), Object.assign(commonOptions, {
-        origin: "bottom"
-    }));
-    sr.reveal(queryAll(".sr--right"), Object.assign(commonOptions, {
-        origin: "right",
-        rotate: {z: -5}
-    }));
-    sr.reveal(queryAll(".sr--left"), Object.assign(commonOptions, {
-        origin: "left",
-        rotate: {z: 5}
-    }));
+    }
+    sr.reveal(queryAll(".sr--initial"), scrollRevealOptions, 550);
+    sr.reveal(queryAll(".sr"), scrollRevealOptions);    
 });

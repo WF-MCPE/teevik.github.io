@@ -40,6 +40,7 @@
     &--work{
         position: relative;
         padding-bottom: $gutter*3;
+        
         &::before{
             content: "";
             position: absolute;

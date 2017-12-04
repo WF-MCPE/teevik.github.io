@@ -21,20 +21,20 @@ html(lang="en")
 
         block head
     body
-        .contacted-popup#contacted-popup.sr.sr--bottom
+        .contacted-popup#contacted-popup.sr
             h2.contacted-popup__title Thank you for contacting me!
             p.contacted-popup__text I'm usually able to respond instantly, unless i'm sleeping.
-        header.header.sr.sr--top
-            .header__content
+        header.header
+            .header__content.sr--initial
                 p.header__logo.button.button--secondary .dev
                 a.header__contact-button.button.button--primary(href="#contact") Hire Me
         section.section.section--about
-            .section__content.sr.sr--left
+            .section__content.sr--initial
                 h2.section__title About
                 p.section__text
-                    | Hi, I'm <b>DotDev</b>. Self taught front-end web developer based in Norway. Fluent in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> along with various frameworks and libraries. Clean code and a keen eye for <b>mobile first design</b>, and <b>user experience</b> help me create a perfect balance between functionality and attractiveness.
+                    | Hi, I'm <b>DotDev</b>. Self taught front-end web developer and freelancer based in Norway. Fluent in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> along with various frameworks and libraries. Clean code and a keen eye for <b>mobile first design</b>, and <b>user experience</b> help me create a perfect balance between functionality and attractiveness.
         section.section.section--work
-            .section__content.sr.sr--right
+            .section__content.sr
                 h2.section__title Work
                 .section__carousel.work-carousel
                     for item in helper.portfolioItems
@@ -49,7 +49,7 @@ html(lang="en")
 
 
         section.section.section--contact
-            .section__content.sr.sr--bottom
+            .section__content.sr
                 a.anchor#contact
                 h2.section__title Contact
                 form.section__contact-form.contact-form(action="https://formspree.io/teemu.vikoren@gmail.com" method="POST")

@@ -1,48 +1,77 @@
-.work-carousel{
-    padding-bottom: $gutter;
-    .flickity-prev-next-button{
-        display: none;
+.work-carousel {
+    margin: 0 (-$gutter);
+    padding: 0 $gutter;
+    padding-bottom: $gutter * 2;
+    overflow: hidden;
+
+    * {
+        overflow: visible;
     }
-    @include desktop{
-        .flickity-prev-next-button{
+
+    .flickity-page-dots {
+        bottom: 0;
+        left: 0;
+    }
+
+    .flickity-prev-next-button {
+        display: none;
+        background-color: white;
+
+        .arrow {
+            fill: $color-primary;
+        }
+
+        box-shadow: box-shadow(1);
+    }
+
+    @include desktop {
+        .flickity-prev-next-button {
             display: initial;
         }
     }
-    &__item{
+
+
+    &__item {
+        margin: 0 ($gutter * 2);
         width: 100%;
-        margin: 0 $gutter*2;
-        @include desktop{
+
+        @include desktop {
             width: 50%;
         }
 
-        transition: filter .5s $easing-function;
+
+        transition: filter 0.5s $easing-function;
         pointer-events: none;
         filter: grayscale(1);
-        &.is-selected{
+
+        &.is-selected {
             filter: none;
             pointer-events: auto;
         }
     }
-    &__image{
+
+    &__image {
         width: 100%;
-        box-shadow: $shadow-dark;
-        border-radius: 4px;
-    }  
-    &__description{
+        box-shadow: box-shadow(2);
+        border-radius: 3px;
+    }
+
+    &__description {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    &__text{
 
-    }
-    &__name{
+    &__text {}
+
+    &__name {
         font-size: 1.6rem;
     }
-    &__about{
 
-    }
-    &__link{
-        flex: 0 0 50px; 
+    &__about {}
+
+    &__link {
+        flex: 0 0 50px;
+        margin-left: $gutter / 2;
     }
 }
