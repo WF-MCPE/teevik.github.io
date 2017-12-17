@@ -20,8 +20,7 @@ document.on("DOMContentLoaded", (e) => {
     const $workCarousel = query(".work-carousel");
     const workCarousel = new Flickity($workCarousel, {
         wrapAround: true,
-        pauseAutoPlayOnHover: false,
-        lazyLoad: 2
+        lazyLoad: 3
     })
     const sr = new ScrollReveal();
 
