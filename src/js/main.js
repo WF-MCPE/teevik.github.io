@@ -31,6 +31,6 @@ document.on("DOMContentLoaded", (e) => {
         viewFactor: 0.3,
         origin: "top"
     }
-    sr.reveal(queryAll(".sr--initial"), scrollRevealOptions, 550);
-    sr.reveal(queryAll(".sr"), scrollRevealOptions);    
+    // sr.reveal(queryAll(".sr--initial"), scrollRevealOptions, 550);
+    // sr.reveal(queryAll(".sr"), scrollRevealOptions);    
 });
