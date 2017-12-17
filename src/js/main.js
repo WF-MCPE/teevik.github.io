@@ -1,4 +1,4 @@
-import Flickity from "flickity";
+import Flickity from "flickity-imagesloaded";
 import ScrollReveal from "scrollreveal";
 
 Node.prototype.on = window.on = function (name, fn) {
@@ -20,7 +20,8 @@ document.on("DOMContentLoaded", (e) => {
     const $workCarousel = query(".work-carousel");
     const workCarousel = new Flickity($workCarousel, {
         wrapAround: true,
-        lazyLoad: 3
+        lazyLoad: 2,
+        imagesLoaded: true
     })
     const sr = new ScrollReveal();
 
@@ -31,6 +32,6 @@ document.on("DOMContentLoaded", (e) => {
         viewFactor: 0.3,
         origin: "top"
     }
-    // sr.reveal(queryAll(".sr--initial"), scrollRevealOptions, 550);
-    // sr.reveal(queryAll(".sr"), scrollRevealOptions);    
+    sr.reveal(queryAll(".sr--initial"), scrollRevealOptions, 550);
+    sr.reveal(queryAll(".sr"), scrollRevealOptions);    
 });

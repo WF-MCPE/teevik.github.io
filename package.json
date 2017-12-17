@@ -34,7 +34,7 @@
   "author": "Teemu Vikøren",
   "license": "ISC",
   "dependencies": {
-    "flickity": "^2.0.10",
+    "flickity-imagesloaded": "^2.0.0",
     "scrollreveal": "^3.3.6"
   }
 }
