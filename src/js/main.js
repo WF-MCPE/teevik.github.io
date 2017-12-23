@@ -16,7 +16,7 @@ NodeList.prototype.on = NodeList.prototype.addEventListener = function (name, fn
 const query = document.querySelector.bind(document);
 const queryAll = document.querySelectorAll.bind(document);
 
-document.on("DOMContentLoaded", (e) => {
+//document.on("DOMContentLoaded", (e) => {
     const $workCarousel = query(".work-carousel");
     const workCarousel = new Flickity($workCarousel, {
         wrapAround: true,
@@ -34,4 +34,4 @@ document.on("DOMContentLoaded", (e) => {
     }
     sr.reveal(queryAll(".sr--initial"), scrollRevealOptions, 550);
     sr.reveal(queryAll(".sr"), scrollRevealOptions);    
-});
+//});
