@@ -51,6 +51,7 @@
     }
 
     &__image {
+        display: block;
         width: 100%;
         box-shadow: box-shadow(2);
         border-radius: 3px;
@@ -59,10 +60,12 @@
     &__description {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        // align-items: center;
     }
 
-    &__text {}
+    &__text {
+        margin-top: $gutter;
+    }
 
     &__name {
         font-size: 1.6rem;
@@ -70,8 +73,17 @@
 
     &__about {}
 
-    &__link {
+    &__links {
+        display: flex;
+        flex-direction: column;
         flex: 0 0 50px;
-        margin-left: $gutter / 2;
+        margin: 0 $gutter / 2;
+        margin-top: -25px;
+
+        &>*{
+            &:not(:last-child){
+                margin-bottom: $gutter/4;
+            }
+        }
     }
 }
