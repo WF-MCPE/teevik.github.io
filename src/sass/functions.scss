@@ -2,13 +2,13 @@
     @if $level == 1 {
         @return 0 2px 8px rgba(0,0,0,0.20);
     } @else if $level == 2 {
-        @return 0 4px 12px rgba(0,0,0,0.20);
+        @return 0 4px 12px rgba(0,0,0,0.25);
     } @else if $level == 3 {
-        @return 0 6px 16px rgba(0,0,0,0.20);
+        @return 0 6px 16px rgba(0,0,0,0.30);
     } @else if $level == 4 {
-        @return 0 8px 24px rgba(0,0,0,0.20);
+        @return 0 8px 24px rgba(0,0,0,0.35);
     } @else if $level == 5 {
-        @return 0 10px 28px rgba(0,0,0,0.20);
+        @return 0 10px 28px rgba(0,0,0,0.40);
     }
 }
 @function box-shadow-reverse($level: 1) {
