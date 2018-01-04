@@ -4,7 +4,6 @@
     var helper = require(helperPath);    
 
 doctype html
-block variables
 
 html(lang="en")
     head
@@ -14,12 +13,9 @@ html(lang="en")
         title DotDev
                         
         script(src="js/main.js")
-
         link(rel="stylesheet" href="css/main.css")
-
         link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,700")
 
-        block head
     body
         .contacted-popup#contacted-popup.sr
             h2.contacted-popup__title Thank you for contacting me!
@@ -44,8 +40,13 @@ html(lang="en")
                                 .work-carousel__text
                                     p.work-carousel__name= item.name
                                     p.work-carousel__about= item.about
-                                a.work-carousel__link.button.button--primary.button--icon(href=item.url target="_blank")
-                                    img(src="img/next.svg")
+                                div.work-carousel__links
+                                    if(item.url)
+                                        a.work-carousel__link.button.button--primary.button--icon(href=item.url target="_blank")
+                                            img(src="img/next.svg")
+                                    if(item.github)
+                                        a.work-carousel__link.button.button--primary.button--icon(href=item.github target="_blank")
+                                            img(src="img/github.svg")
 
 
         section.section.section--contact
