@@ -37,6 +37,12 @@
     &__carousel{
         
     }
+    &__illustration{
+        // position: absolute;
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+    }
     &--about{
         position: relative;
     }

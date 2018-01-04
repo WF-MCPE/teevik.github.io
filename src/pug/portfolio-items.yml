@@ -1,4 +1,10 @@
 -
+    name: "Twitter Trending"
+    about: "An React app that shows both global trends and trends near you"
+    url: "https://teevik.github.io/Twitter-Trending/"
+    github: "https://github.com/teevik/Twitter-Trending"
+    image: twitter-trends.png
+-
     name: "Atlanta Designs"
     about: "(Work in progress) Simplistic portfolio page for a designer, with 5 pages and CMS integration"
     url: "http://45.55.66.48/"
@@ -55,12 +61,6 @@
     about: "A portfolio page for an company"
     url: "https://teevik.github.io/Divine-Creators/"
     image: divine-creators.png
--
-    name: "Twitter Trending"
-    about: "An React app that shows both global trends and trends near you"
-    url: "https://teevik.github.io/Twitter-Trending/"
-    github: "https://github.com/teevik/Twitter-Trending"
-    image: twitter-trends.png
 -
     name: Calculator
     about: "An calculator made in React"
