@@ -4,10 +4,14 @@
     url: "https://teevik.github.io/Twitter-Trending/"
     github: "https://github.com/teevik/Twitter-Trending"
     image: twitter-trends.png
+    name: "Selly.gg Shop Website"
+    about: "Automatically fetches all products from a Selly.gg and displays them"
+    url: "http://45.55.66.48/1"
+    image: sellyshop.png
 -
     name: "Atlanta Designs"
     about: "(Work in progress) Simplistic portfolio page for a designer, with 5 pages and CMS integration"
-    url: "http://45.55.66.48/"
+    url: "http://45.55.66.48/atlanta"
     image: atlanta-designs.png
 -
     name: "PMG Designs"
