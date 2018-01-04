@@ -12,14 +12,14 @@
 
     cursor: pointer;
 
-    box-shadow: box-shadow(2);
+    box-shadow: box-shadow(4);
     transition-property: transform, box-shadow;
     transition-duration: .2s;
     transition-timing-function: $easing-function;
     @include desktop{
         &:hover{
             transform: translateY(-4px);
-            box-shadow: box-shadow(4);
+            box-shadow: box-shadow(5);
         }
     }
     &--primary {
