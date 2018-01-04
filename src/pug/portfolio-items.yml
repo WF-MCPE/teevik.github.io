@@ -1,95 +1,80 @@
 -
-    name: 'Atlanta Designs'
-    about: '(Work in progress) Simplistic portfolio page for a designer, with 5 pages and CMS integration'
-    url: 'http://45.55.66.48/'
+    name: "Atlanta Designs"
+    about: "(Work in progress) Simplistic portfolio page for a designer, with 5 pages and CMS integration"
+    url: "http://45.55.66.48/"
     image: atlanta-designs.png
 -
-    name: 'Time Legacy'
-    about: 'Sleek portal page, with animations and a script for fetching newest announcment from a XenForo forum'
-    url: 'http://time-legacy.surge.sh/'
-    image: time-legacy.png
--
-    name: 'PMG Designs'
-    about: '(Work in progress) 10 page website, with simplistic black & white design.'
-    url: 'http://pmg-designs.surge.sh/'
+    name: "PMG Designs"
+    about: "(Work in progress) 10 page website, with simplistic black & white design."
+    url: "http://pmg-designs.surge.sh/"
     image: pmg-designs.png
 -
-    name: Zeppy
-    about: 'Simple page with youtube video in the background'
-    url: 'http://zeppysite.surge.sh/'
-    image: zeppy.png
--
-    name: 'Destiny Trials Report'
-    about: 'React app that uses the bungie API to show stats description the Destiny 2 game'
-    url: 'http://trialsreport.surge.sh/'
+    name: "Destiny Trials Report"
+    about: "React app that uses the bungie API to show stats description the Destiny 2 game"
+    url: "https://radiant-reef-26662.herokuapp.com/"
+    github: "https://github.com/teevik/Destiny-Trials-Report"
     image: trials-report.png
 -
-    name: Uploader
-    about: 'Altshop website with selly.gg integration and two pages'
-    url: 'http://uploader-site.surge.sh/'
-    image: uploader.png
--
-    name: 'Bent Accounts'
-    about: 'An altshop with selly.gg integration and 3 pages'
-    url: 'https://teevik.github.io/BentAccounts/'
+    name: "Bent Accounts"
+    about: "An altshop with selly.gg integration and 3 pages"
+    url: "https://teevik.github.io/BentAccounts/"
     image: bent-accounts.png
 -
     name: KoenFox
-    about: 'An portfolio page for a client'
-    url: 'https://teevik.github.io/KoenFox/'
+    about: "An portfolio page for a client"
+    url: "https://teevik.github.io/KoenFox/"
     image: koenfox.png
 -
-    name: 'Public API List'
-    about: 'Fetches a list of APIs from an API and sorts them by category'
-    url: 'https://teevik.github.io/Public-API-List/'
+    name: Uploader
+    about: "Altshop website with selly.gg integration and two pages"
+    url: "http://uploader-site.surge.sh/"
+    image: uploader.png
+-
+    name: "Time Legacy"
+    about: "Sleek portal page, with animations and a script for fetching newest announcment from a XenForo forum"
+    url: "http://time-legacy.surge.sh/"
+    image: time-legacy.png
+-
+    name: Zeppy
+    about: "Simple page with youtube video in the background"
+    url: "http://zeppysite.surge.sh/"
+    image: zeppy.png
+-
+    name: "Public API List"
+    about: "Fetches a list of APIs from an API and sorts them by category"
+    url: "https://teevik.github.io/Public-API-List/"
+    github: "https://github.com/teevik/Public-API-List"
     image: api-list.png
 -
-    name: 'Old portfolio'
-    about: 'This is my previous portfolio page'
-    url: 'https://teevik.github.io/Portfolio-4/'
+    name: "Old portfolio"
+    about: "This is my previous portfolio page"
+    url: "https://teevik.github.io/Portfolio-4/"
     image: old-portfolio.png
 -
-    name: 'Divine Creators'
-    about: 'A portfolio page for an company'
-    url: 'https://teevik.github.io/Divine-Creators/'
+    name: "Divine Creators"
+    about: "A portfolio page for an company"
+    url: "https://teevik.github.io/Divine-Creators/"
     image: divine-creators.png
 -
-    name: 'Twitter Trending'
-    about: 'An React app that shows both global trends and trends near you'
-    url: 'https://teevik.github.io/Twitter-Trending/'
+    name: "Twitter Trending"
+    about: "An React app that shows both global trends and trends near you"
+    url: "https://teevik.github.io/Twitter-Trending/"
+    github: "https://github.com/teevik/Twitter-Trending"
     image: twitter-trends.png
 -
-    name: 'Game of Life'
-    about: 'An Game of Life implementation in React'
-    url: 'https://teevik.github.io/Game-Of-Life/'
-    image: game-of-life.png
--
-    name: 'Tic Tac Toe'
-    about: 'The Tic Tac Toe game made in React'
-    url: 'https://teevik.github.io/Tic-Tac-Toe/'
-    image: tic-tac-toe.png
--
     name: Calculator
-    about: 'An calculator made in React'
-    url: 'https://teevik.github.io/Calculator/'
+    about: "An calculator made in React"
+    url: "https://teevik.github.io/Calculator/"
+    github: "https://github.com/teevik/Calculator"
     image: calculator.png
 -
-    name: 'Pomodoro Clock'
-    about: 'A clock for knowing when to take a work break'
-    url: 'https://teevik.github.io/Pomodoro-Clock/'
-    image: pomodoro-clock.png
--
     name: Asteroids
-    about: 'A browser game made using HTML Canvas and javascript'
-    url: 'https://teevik.github.io/Asteroids/'
+    about: "A browser game made using HTML Canvas and javascript"
+    url: "https://teevik.github.io/Asteroids/"
+    github: "https://github.com/teevik/Asteroids"
     image: asteroids.png
 -
-    name: 'Quote Machine'
-    about: 'React app that uses an API to fetch quotes'
-    url: 'http://teevik.me/Quote-Machine/'
-    image: quote-machine.png
--
-    name: 'Twitch Lists'
-    about: 'React app that uses the Twitch.tv API to show both featured streamers, and the most popular games'
-    url: 'https://teevik.github.io/Twitch-Lists/'
+    name: "Twitch Lists"
+    about: "React app that uses the Twitch.tv API to show both featured streamers, and the most popular games"
+    url: "https://teevik.github.io/Twitch-Lists/"
     image: twitch-listings.png
