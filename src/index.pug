@@ -36,7 +36,7 @@ html(lang="en")
                 .section__carousel.work-carousel
                     for item in helper.portfolioItems
                         .work-carousel__item
-                            img.work-carousel__image(data-flickity-lazyload=`img/portfolioItems/${item.image}`)
+                            img.work-carousel__image(src=`img/portfolioItems/${item.image}`)
                             .work-carousel__description 
                                 .work-carousel__text
                                     p.work-carousel__name= item.name
