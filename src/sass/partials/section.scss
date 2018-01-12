@@ -37,19 +37,24 @@
     &__carousel{
         
     }
-    &__illustration{
-        // position: absolute;
-        width: 100%;
-        max-width: 300px;
-        margin-left: auto;
-        margin: $gutter/2 0;
-    }
     &--about{
         position: relative;
+        @media (min-width: 900px){
+            background-image: url("../img/shape.svg");
+            background-size: auto 70%;
+            background-repeat: no-repeat;
+            background-position: 100% 0;
+        }
+        
+        .section__text{
+            max-width: $content-width/2;
+        }
     }
     &--work{
         position: relative;
         padding-bottom: $gutter*3;
+
+        z-index: 1;
         
         &::before{
             content: "";
