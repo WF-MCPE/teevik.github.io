@@ -12,6 +12,10 @@ html(lang="en")
         
         title DotDev
                         
+        script.
+            window.addEventListener("beforeunload", function(){
+                window.scrollTo(0, 0);
+            });
         script(src="js/main.js")
 
         link(rel="stylesheet" href="css/main.css")
