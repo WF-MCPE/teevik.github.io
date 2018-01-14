@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotDev</title>
+    <script>
+      window.addEventListener("beforeunload", function(){
+          window.scrollTo(0, 0);
+      });
+    </script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,700">
+  </head>
+  <body>
+    <div class="contacted-popup sr" id="contacted-popup">
+      <h2 class="contacted-popup__title">Thank you for reaching out to me!</h2>
+      <p class="contacted-popup__text">I'm usually able to respond instantly, unless i'm sleeping.</p>
+    </div>
+    <header class="header">
+      <div class="header__content sr--initial">
+        <p class="header__logo button button--primary">.dev</p><a class="header__contact-button button button--secondary" href="#contact">Hire Me</a>
+      </div>
+    </header>
+    <section class="section section--about">
+      <div class="section__content sr--initial">
+        <h2 class="section__title">About</h2>
+        <p class="section__text">Hi, I'm <b>DotDev</b>. A self taught front-end web developer and freelancer based in Norway. I'm fluent in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> along with various frameworks and libraries. Clean code and a keen eye for <b>mobile first design</b>, and <b>user experience</b> help me create a perfect balance between functionality and attractiveness.</p>
+      </div>
+    </section>
+    <section class="section section--work">
+      <div class="section__content sr">
+        <h2 class="section__title">Work</h2>
+        <div class="section__carousel work-carousel">
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/twitter-trends.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Twitter Trending</p>
+                <p class="work-carousel__about">An React app that shows both global trends and trends near you</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="https://teevik.github.io/Twitter-Trending/" target="_blank"><img src="img/next.svg"></a><a class="work-carousel__link button button--primary button--icon" href="https://github.com/teevik/Twitter-Trending" target="_blank"><img src="img/github.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/artist-portfolio.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Artist Portfolio</p>
+                <p class="work-carousel__about">A portfolio template meant for artists</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="http://dotdev.services/artist-portfolio/" target="_blank"><img src="img/next.svg"></a><a class="work-carousel__link button button--primary button--icon" href="https://github.com/teevik/artist-portfolio" target="_blank"><img src="img/github.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/sellyshop.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Selly.gg Shop Website</p>
+                <p class="work-carousel__about">Automatically fetches all products from a Selly.gg and displays them</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="http://45.55.66.48/1" target="_blank"><img src="img/next.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/atlanta-designs.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Atlanta Designs</p>
+                <p class="work-carousel__about">(Work in progress) Simplistic portfolio page for a designer, with 5 pages and CMS integration</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="http://45.55.66.48/atlanta" target="_blank"><img src="img/next.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/pmg-designs.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">PMG Designs</p>
+                <p class="work-carousel__about">(Work in progress) 10 page website, with simplistic black &amp; white design.</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="http://pmg-designs.surge.sh/" target="_blank"><img src="img/next.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/trials-report.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Destiny Trials Report</p>
+                <p class="work-carousel__about">React app that uses the bungie API to show stats description the Destiny 2 game</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="https://radiant-reef-26662.herokuapp.com/" target="_blank"><img src="img/next.svg"></a><a class="work-carousel__link button button--primary button--icon" href="https://github.com/teevik/Destiny-Trials-Report" target="_blank"><img src="img/github.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/bent-accounts.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Bent Accounts</p>
+                <p class="work-carousel__about">An altshop with selly.gg integration and 3 pages</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="https://teevik.github.io/BentAccounts/" target="_blank"><img src="img/next.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/koenfox.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">KoenFox</p>
+                <p class="work-carousel__about">An portfolio page for a client</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="https://teevik.github.io/KoenFox/" target="_blank"><img src="img/next.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/uploader.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Uploader</p>
+                <p class="work-carousel__about">Altshop website with selly.gg integration and two pages</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="http://uploader-site.surge.sh/" target="_blank"><img src="img/next.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/time-legacy.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Time Legacy</p>
+                <p class="work-carousel__about">Sleek portal page, with animations and a script for fetching newest announcment from a XenForo forum</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="http://time-legacy.surge.sh/" target="_blank"><img src="img/next.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/zeppy.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Zeppy</p>
+                <p class="work-carousel__about">Simple page with youtube video in the background</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="http://zeppysite.surge.sh/" target="_blank"><img src="img/next.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/api-list.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Public API List</p>
+                <p class="work-carousel__about">Fetches a list of APIs from an API and sorts them by category</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="https://teevik.github.io/Public-API-List/" target="_blank"><img src="img/next.svg"></a><a class="work-carousel__link button button--primary button--icon" href="https://github.com/teevik/Public-API-List" target="_blank"><img src="img/github.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/old-portfolio.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Old portfolio</p>
+                <p class="work-carousel__about">This is my previous portfolio page</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="https://teevik.github.io/Portfolio-4/" target="_blank"><img src="img/next.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/divine-creators.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Divine Creators</p>
+                <p class="work-carousel__about">A portfolio page for an company</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="https://teevik.github.io/Divine-Creators/" target="_blank"><img src="img/next.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/calculator.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Calculator</p>
+                <p class="work-carousel__about">An calculator made in React</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="https://teevik.github.io/Calculator/" target="_blank"><img src="img/next.svg"></a><a class="work-carousel__link button button--primary button--icon" href="https://github.com/teevik/Calculator" target="_blank"><img src="img/github.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/asteroids.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Asteroids</p>
+                <p class="work-carousel__about">A browser game made using HTML Canvas and javascript</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="https://teevik.github.io/Asteroids/" target="_blank"><img src="img/next.svg"></a><a class="work-carousel__link button button--primary button--icon" href="https://github.com/teevik/Asteroids" target="_blank"><img src="img/github.svg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="work-carousel__item"><img class="work-carousel__image" src="img/portfolioItems/twitch-listings.png">
+            <div class="work-carousel__description"> 
+              <div class="work-carousel__text">
+                <p class="work-carousel__name">Twitch Lists</p>
+                <p class="work-carousel__about">React app that uses the Twitch.tv API to show both featured streamers, and the most popular games</p>
+              </div>
+              <div class="work-carousel__links"><a class="work-carousel__link button button--primary button--icon" href="https://teevik.github.io/Twitch-Lists/" target="_blank"><img src="img/next.svg"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--contact">
+      <div class="section__content sr"><a class="anchor" id="contact"></a>
+        <h2 class="section__title">Contact</h2>
+        <form class="section__contact-form contact-form" action="https://formspree.io/teemu.vikoren@gmail.com" method="POST">
+          <div class="contact-form__float-input float-input">
+            <input class="float-input__input contact-form__input" id="name" name="name" type="text" required placeholder="John Doe">
+            <label class="float-input__label contact-form__label" for="name">Your Name</label>
+          </div>
+          <div class="contact-form__float-input float-input">
+            <input class="float-input__input contact-form__input" id="email" name="_replyto" type="email" required placeholder="johndoe@gmail.com">
+            <label class="float-input__label contact-form__label" for="email">Your Email</label>
+          </div>
+          <div class="contact-form__float-input float-input">
+            <input class="float-input__input contact-form__input" id="message" name="message" type="text" required placeholder="Hello, i would like to order ...">
+            <label class="float-input__label contact-form__label" for="message">Your Message</label>
+          </div>
+          <label class="contact-form__submit button button--primary button--icon"><img src="img/send.svg">
+            <input type="submit">
+          </label>
+          <input type="hidden" name="_next" value="/#contacted-popup">
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
